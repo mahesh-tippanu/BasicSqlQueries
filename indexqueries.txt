@@ -1,0 +1,4 @@
+create index byCity on empTable(EmployeeID, Employee_Name, city);
+select * from byCity;
+ALTER TABLE empTable DROP INDEX byCity;
+show indexes from empTable;
